@@ -1,0 +1,11 @@
+<h3> Tasks </h3>
+<hr>
+<br>
+<% @category_tasks.each do |t|%> 
+    <div>
+        <p>Task: <%= t.task_name %></p>
+        <p>Details: <%= t.details %></p>
+        <p>Deadline: <%= t.due_date %></p>
+    </div>
+    <br>
+<% end %>
