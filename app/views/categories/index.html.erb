@@ -1,6 +1,8 @@
 <h3> Categories </h3>
 <hr>
 <br>
+<%= link_to "Create New Category", new_category_path %>
+<br>
 <% @categories.each do |c|%>
     <ul>
         <li>
@@ -8,4 +10,17 @@
         <p><%= link_to "View Category", category_path(c) %></p>
         </li>
     </ul>
+<% end %>
+<br>
+<hr>
+
+<div>
+    <h4>Tasks due today:</h4>
+</div>
+
+<% @today.each do |t| %>
+    <li>
+        <%= t.task_name %>
+        <%= t.due_date %>
+    </li>
 <% end %>

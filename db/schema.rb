@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_10_24_120407) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_26_144214) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_24_120407) do
     t.string "category_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "details", default: "A category for tasks"
   end
 
   create_table "tasks", force: :cascade do |t|
