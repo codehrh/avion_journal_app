@@ -55,3 +55,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# gem "tailwindcss-rails", "~> 3.0"
+
+gem 'devise', '~> 4.9', '>= 4.9.4'
+
+gem 'rails_live_reload', '~> 0.3.6'
