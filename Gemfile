@@ -60,4 +60,4 @@ end
 
 gem 'devise', '~> 4.9', '>= 4.9.4'
 
-gem 'rails_live_reload', '~> 0.3.6'
+gem 'rails_live_reload', '~> 0.4.0'
